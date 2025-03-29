@@ -1,0 +1,33 @@
+/* styles/LinkHover.module.css */
+.link {
+    font-size: 24px;
+    font-weight: bold;
+    /*color: #000000;*/
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .letter {
+    display: inline-block;
+    opacity: 1;
+    transition: color 0.3s ease;
+  }
+  
+  /* เมื่อ hover บน Link ให้เปลี่ยนสีทีละตัว */
+  .link:hover .letter {
+    color: #4759ff;  /* สีที่ต้องการเมื่อ hover */
+    animation: changeColor 1s forwards;
+  }
+  
+  /* Animation ที่เปลี่ยนสีทีละตัวอักษร */
+  @keyframes changeColor {
+    0% {
+      opacity: 0;
+      color: #333;
+    }
+    100% {
+      opacity: 1;
+      color: #ff6347;
+    }
+  }
+  
