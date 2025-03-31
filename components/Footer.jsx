@@ -7,7 +7,7 @@ const Footer = ({isDarkMode}) => {
   return (
     <div className='mt-20 '>
         <div className='text-center'>
-            <Image src={isDarkMode ? '/image/ittiphol-w.png' : '/image/ittiphol-d.png'} alt='' className='w-36 mx-auto mb-2 ' width={300} height={300}/>
+            <Image src={isDarkMode ? '/image/Ittiphol-w.png' : '/image/Ittiphol-d.png'} alt='' className='w-36 mx-auto mb-2 ' width={300} height={300}/>
 
             <div className='w-max flex items-center gap-2 mx-auto text-black dark:text-white'>
                 <Image src={isDarkMode ? assets.mail_icon_dark : assets.mail_icon} alt='' className='w-6' />
