@@ -40,7 +40,7 @@ const Work = ({isDarkMode}) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.9, duration: 0.6 }}
-        className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] my-10 gap-5 dark:text-black'>
+        className='grid  grid-cols-[repeat(auto-fit,minmax(200px,1fr))] max-w-screen-lg mx-auto my-10 gap-5 dark:text-black'>
             {workData.map((project, index)=>(
                 <motion.div 
                 whileHover={{ scale: 1.05 }}
@@ -63,14 +63,24 @@ const Work = ({isDarkMode}) => {
             ))}
         </motion.div>
 
-        <motion.a 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 1.1, duration: 0.5 }}
-        href="" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700
-        rounded-full y-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500 dark:text-white dark:border-white dark:hover:bg-black'>
-            <LinkHover text="Show&nbsp;More..."/> <Image alt='Right arrow' src={isDarkMode ? assets.right_arrow_white : assets.right_arrow_bold_dark} className='w-4'/>
-        </motion.a>
+            <div className='flex flex-wrap justify-center gap-2 my-10'>
+
+            <motion.a 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 1.1, duration: 0.5 }}
+            target='_blank'
+            href="https://github.com/P-Ittiphol" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700
+            rounded-full px-10 py-2 mx-10 my-5   hover:bg-[#fcf4ff] duration-500 dark:text-white dark:border-white dark:hover:bg-black'>
+                <LinkHover text="Git&nbsp;Hub"/> <Image alt='Right arrow' src={isDarkMode ? assets.right_arrow_white : assets.right_arrow_bold} className='w-4'/>
+            </motion.a>
+
+            </div>
+
+            
+
+            
+        
             
     </motion.div>
   )

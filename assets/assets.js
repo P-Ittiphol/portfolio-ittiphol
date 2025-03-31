@@ -97,6 +97,27 @@ export const workData = [
         description: 'UI/UX Design',
         bgImage: '/work-4.png',
     },
+    {
+        title: 'Project SERM',
+        description: 'Museum App...',
+        bgImage: '/image/serm.jpg',
+    },
+    {
+        title: 'Project XRCC',
+        description: 'Cityscape App...',
+        bgImage: '/image/xrcc.jpg',
+    },
+    {
+        title: 'Sample... ',
+        description: 'Examples in the company...',
+        bgImage: '/work-3.png',
+    },
+    {
+        title: 'etc.',
+        description: 'Miscellaneous work...',
+        bgImage: '/work-4.png',
+    },
+    
 ]
 
 export const serviceData = [
